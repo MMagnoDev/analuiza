@@ -709,18 +709,24 @@ strong {
     max-width: 500px;
   }
 
+  .personal-gallery {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .triptych-item:nth-child(1),
+  .triptych-item:nth-child(3) {
+    display: none;
+  }
+
 }
 
 @media (max-width: 640px) {
   :root {
     --section-pad-y: 4rem;
     --section-pad-x: 1.5rem;
-  }
-
-
-  .personal-gallery {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
   }
 
   .hero-content {
